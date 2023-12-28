@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+
+    <!-- From Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+
+    <!-- From app & route -->
+    <script src="./app/app.js"></script>
+    <script src="./app/route.js"></script>
+    
+    <!-- Services -->
+    <script src="./services/userservice.js"></script>
+    <script src="./services/pizzaservice.js"></script>
+    <script src="./services/dessertsservice.js"></script>
+    <script src="./services/burgerservice.js"></script>
+
+    <!-- Signin & Signup -->
+    <script src="./controllers/signin.js"></script>
+    <script src="./controllers/signup.js"></script>
+    <script src="./controllers/otp.js"></script>
+    <script src="./controllers/dashboard.js"></script>
+    <script src="./controllers/forget.js"></script>
+    <script src="./controllers/pizza.js"></script>
+    <script src="./controllers/desserts.js"></script>
+    <script src="./controllers/burger.js"></script>
+
+    <!-- FilterFunction -->
+    <script src="./controllers/filterfunction.js"></script>
+    <!-- mail  -->
+    <script src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+</head>
+<body>
+   
+    <!-- <div ng-include="'view/navbar.html'"></div> -->
+    <div ng-view></div>
+</body>
+</html>

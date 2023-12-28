@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-image: linear-gradient(rgb(243, 217, 67),rgba(90, 230, 176, 0.616)); */
+}
+.signupphoto{
+    width: 50%;
+    /* background-color: aqua; */
+    margin-left: 100px;
+    margin-top: -50px;
+
+}
+.signupphoto > img{
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+.forms{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: auto auto;
+    /* margin-left: -100px; */
+
+
+}
+
+
+.forms > form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    margin-left: -100px;
+    
+} 
+
+
+.forms > h2{
+    color: rgb(192, 59, 59);
+    padding: 10px;
+    margin-left: -95px;
+} 
+.forms > form > button{
+    width: 20%;
+    padding: 10px;
+    color: cornsilk;
+    background-color: rgb(159, 161, 39);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+} 
+
+.forms > form > input{
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid rgb(201, 201, 122);
+    border-radius: 5px;
+    margin-top: 20px;
+    
+    
+} 
+
+.showpassword{
+    margin-left: 20px;
+}
+
+#forget{
+    text-decoration: none;
+    color: black;
+}
+#already{
+    margin-left: -150px;
+
+}
+
+#error{
+    color: red;
+    margin-left: 25px;
+    font-size: 20px;
+}

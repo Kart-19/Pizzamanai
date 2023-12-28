@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="../styles/dessert.css">
+<a href="#!dashboard" id="goback">GoBack</a>
+<input type="text" placeholder="Search.." id="inpbox" ng-model="name">
+<div class="main">
+
+  <div class="pizza-container" ng-repeat="i in arr | filter : name">
+   
+    <div class="pizza-card" onclick="showDescription(i.name, i.description, i.img, '$10.99')">
+      <img class="pizza-img" src="{{i.img}}" alt="Pizza Name">
+      <div class="pizza-details">
+        <h2>{{i.name}}</h2>
+        <p>{{i.description}}</p>
+        <p class="price">{{i.price * 5 | currency}}</p>
+      </div>
+    </div>
+
+	
+
+    <!-- Add three more horizontal pizza cards as needed -->
+
+    <!-- Add vertical pizza cards here -->
+  </div>
+
+  <!-- Modal for displaying full description -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img class="pizza-img" id="modalImg" alt="Pizza Name">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <p class="price" id="modalPrice"></p>
+    </div>
+  </div>
+</div>
+  <script>
+    function showDescription(title, description, imgSrc, price) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDescription').innerText = description;
+      document.getElementById('modalImg').src = imgSrc;
+      document.getElementById('modalPrice').innerText = price;
+      document.getElementById('myModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function(event) {
+      var modal = document.getElementById('myModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>

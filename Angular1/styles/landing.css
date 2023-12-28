@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(248, 155, 155, 0.575);
+}
+.banner{
+    background-image: url("https://www.pizzahut.co.in/order/images/backgrounds/in/en-IN/home-bg-sm.8d2bff6746aee15655d14de8b7323907.jpg");
+    margin-left: 200px;
+    margin-top: 20px;
+    height: 500px;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+
+/* Deal Style */
+.deals{
+    width: 100%;
+    display: flex;
+}
+
+#deal1{
+width: 50%;
+
+background-image: url("https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/hut80.2caac21bb05506fa5e4b449df3f085a9.1.jpg");
+height: 500px;
+background-repeat: no-repeat;
+margin-left: 50px;
+}
+#deal2{
+    width: 50%;
+
+background-image: url("https://api.pizzahut.io/v1/content/en-in/in-1/images/promo/hut300.210cd37ea0750dff99d6c34fa6da7df7.1.jpg");
+height: 500px;
+background-repeat: no-repeat;
+}
+
+
+/* For Ou Deal Style */
+.highlight {
+    position: relative;
+    display: inline-block;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .highlight:before,
+  .highlight:after {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-bottom: 2px solid black; /* You can adjust the color and style */
+    width: 50%; /* Adjust the length of the line as needed */
+  }
+
+  .highlight:before {
+    right: 100%; 
+    margin-right: 5px; 
+  }
+
+  .highlight:after {
+    left: 100%; 
+    margin-left: 5px;
+  }
+
+
+  /* For Footer */
+
+  footer {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .footer-section > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+
+  }
+
+  .footer-section > ul > li > a:hover{
+    
+    text-decoration: underline;
+    padding: 2px;
+
+  }
+
+  h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+
+  p, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  .social-icons > a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* For Button Box */
+  .btnbox{
+    margin-top: 40px;
+    background-color: rgba(255, 59, 59, 0.863);
+    text-align: center;
+    height: 50px;
+    
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+.btnbox > a{
+    padding: 5px;
+    font-size: 40px;
+    text-decoration: none;
+    color: antiquewhite;
+}

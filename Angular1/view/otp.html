@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="../styles/otp.css">
+
+<h3>Otp Has send to your E-Mail. Please Verify it.!</h3>
+<div class="otp-container">
+    {{msg}}
+    <input type="text" placeholder="Enter the Otp" ng-model="otpuser" class="otp-input">
+    <button ng-click="verify()" type="button" class="submit-btn">Verify</button>
+</div>

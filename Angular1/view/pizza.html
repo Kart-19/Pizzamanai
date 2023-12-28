@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../styles/pizza1.css">
+<a href="#!dashboard" id="goback">GoBack</a>
+<input type="text" placeholder="Search.." id="inpbox" ng-model="name">
+<button id="btn1" ng-click="filterMethod('true')" ><img src="../assets/images/veg-icon.svg" style="height: 50px;"></button>
+<button id="btn2" ng-click="filterMethod('false')"><img src="../assets/images/non-veg-icon.svg" style="height: 50px;"></button>
+<button id="btn3" ng-click="sortMethod('price')"><img src="../assets/images/icons8-price-48.png" style="height: 50px;"></button>
+
+
+
+  
+
+    <div class="pizza-card"  >
+      <li ng-repeat="i in arr | filter : name | filter : {veg : byName} | orderBy : prices ">
+
+        <img class="pizza-img" src="{{i.img}}" alt="Pizza Name">
+        
+        <div class="pizza-details">
+          <h2>{{i.name}}</h2>
+          <p>{{i.description}}</p>
+          <p class="price">{{i.price * 5 | currency}}</p>
+        </div>
+      </li>
+      
+    </div>
+
+
+
+
+
+  <!-- Modal for displaying full description -->
+
+  

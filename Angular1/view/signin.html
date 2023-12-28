@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../styles/signin.css">
+
+<div class="main">
+    <div class="images">
+        <img src="../assets/images/Login-amico.png" style="height: 500px; width:500px;">
+    </div>
+    <div class="forms">
+        <form>
+            <h2>Signin !!</h2>
+            <span class="error">{{msg}}</span>
+            <input type="email" ng-model="email" id="email" placeholder="Enter the Email"><br>
+        
+             <input type="password" ng-model="password" id="pass" placeholder="Enter the Password" ng-attr-type = "{{show ? 'text':'password'}}"><br>
+                <br><br>
+             <div id="showpassword">
+                <input type="checkbox" name="show" id="show" ng-click="toogle()" ng-model="show"> Show Password 
+        
+                &nbsp;&nbsp;&nbsp;
+                <!-- <a href="#!forgetpassword" id="forget">Forget Password ?</a> -->
+            </div>
+                <button type="button" ng-click="signin()" >Signin <img src="../assets/images/login_FILL0_wght400_GRAD0_opsz24.png" style="margin-bottom: -7px;"></button>
+        </form>
+        <h3 id="already">Don't have account ? <a href="#!signup" style="text-decoration: none; color:rgb(226, 129, 65);">Signup</a></h3>
+
+    </div>
+  </div>

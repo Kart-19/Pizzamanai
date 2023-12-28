@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "test123"
+    },
+    {
+      "name": "kaka",
+      "email": "kaka@gmail.com",
+      "password": "kaka",
+      "id": 2
+    },
+    {
+      "name": "kk",
+      "email": "kaka@gmail.com",
+      "password": "asd",
+      "id": 3
+    },
+    {
+      "name": "abishek",
+      "email": "abishek.sengottuvel7278@gmail.com",
+      "password": "asd",
+      "id": 4
+    },
+    {
+      "name": "gary",
+      "email": "gary@gmail.com",
+      "password": "asd",
+      "id": 5
+    },
+    {
+      "name": "kaka",
+      "email": "2k19cse038@kiot.ac.in",
+      "password": "zxcvbn",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

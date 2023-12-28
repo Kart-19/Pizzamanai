@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="../styles/signup.css">
+<div class="main">
+
+    <div class="signupphoto">
+            <img src="../assets/images/Mobile login-amico.png" alt="photo" >
+    </div>
+
+<div class="forms">
+    <h2>Register a Account !!</h2>
+<form>
+
+     <h3 id="error">{{msg}}</h3>
+     
+    <input type="text" ng-model="name" id="name" placeholder="Enter the Fullname" required><br>
+  
+    <input type="email" ng-model="email" id="email" placeholder="Enter the Email" required><br>
+    
+    <input type="password" ng-model="password" id="pass" placeholder="Enter the Password" required ng-attr-type = "{{show ? 'text':'password'}}"><br>
+
+    <input type="password" ng-model="repassword" id="repass" placeholder="Confirm Password" required ng-attr-type = "{{show ? 'text':'password'}}"><br>
+
+<div id="showpassword">
+    <input type="checkbox" name="show" id="show" ng-click="toogle()" ng-model="show"> Show Password 
+
+    &nbsp;&nbsp;&nbsp;
+    <!-- <a href="#!forgetpassword" id="forget">Forget Password ?</a> -->
+</div>
+    <button type="button" ng-click="signup()" >Signup <img src="../assets/images/login_FILL0_wght400_GRAD0_opsz24.png" style="margin-bottom: -7px;"></button>
+
+</form>
+<h3 id="already">Already have account ? <a href="#!signin" style="text-decoration: none; color:darkkhaki;">Signin</a></h3>
+</div> 
+</div>   
